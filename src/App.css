@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+/* styles for desktop devices */
+@media (min-width: 1024px) {
+  .bg-image {
+    background-image: url('bg-dark.png');
+    /* other styles */
+  }
+}
+
+/* styles for mobile devices */
+@media (max-width: 1023px) {
+  .bg-image {
+    background-image: url('bg-light.png');
+    /* other styles */
+  }
+}
+
+.bg-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+}
+
