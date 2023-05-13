@@ -12,7 +12,7 @@ function App() {
 
   const searchWeather = async (e) => {
     e.preventDefault();
-    const API_KEY = 'YOUR_API_KEY';
+    const API_KEY = '98a1529477b25d9f2ab323b079ea93f3';
     const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=metric`;
     const response = await axios.get(URL);
     const data = response.data;
